@@ -45,4 +45,12 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+$('#myModal').on('show.bs.modal', function () {
+    //  fix window and contents height
+    $('.modal-content').css('height',$( window ).height()*0.9);
+    $('.modal-body').css('height',$( window ).height()*0.9);
+    //  fix scrolling
+    $('.modal').css('position', 'absolute');
+});
+
 })(jQuery); // End of use strict

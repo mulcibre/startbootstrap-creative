@@ -5702,7 +5702,7 @@ button.close {
   overflow: hidden;
 }
 .modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -5738,7 +5738,7 @@ button.close {
   margin: 10px;
 }
 .modal-content {
-  position: relative;
+  position: absolute;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -5777,7 +5777,11 @@ button.close {
   line-height: 1.42857143;
 }
 .modal-body {
-  position: relative;
+  position: absolute;
+  overflow-y: auto;
+  max-height: 400px;
+  overflow-x: auto;
+  max-width: 400px;
   padding: 15px;
 }
 .modal-footer {
