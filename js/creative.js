@@ -50,7 +50,7 @@ $('#myModal').on('show.bs.modal', function () {
     $('.modal-content').css('height',$( window ).height()*0.9);
     $('.modal-body').css('height',$( window ).height()*0.9);
     //  fix scrolling
-    $('.modal').css('position', 'absolute');
+    $('.modal').css('top', '0%');
 });
 
 })(jQuery); // End of use strict
